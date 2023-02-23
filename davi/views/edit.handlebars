@@ -1,0 +1,32 @@
+<h1> Editar Empresa</h1>
+<hr>
+
+<form action="/alterar/updateEmpresa" method="POST"> 
+<div class="form control">
+    <input type="hidden" name="CNPJ" id="CNPJ" value="{{empresa.CNPJ}}">
+    <label for="nome">nome</label>
+    <input type="text" name="nome" placeholder="Digite aqui o nome do empresa"
+     value="{{empresa.nome}}">
+</div>
+
+<div class="form control">
+    <label for="email">email</label>
+    <input type="text" name="email" placeholder="Digite aqui o email do empresa"
+     value="{{empresa.email}}">
+</div>
+
+<div class="form control">
+    <label for="telefone">telefone</label>
+    <input type="text" name="telefone" placeholder="Digite aqui o telefone do empresa" 
+    value="{{empresa.telefone}}">
+</div>
+
+<div class="form control">
+    <label for="local">local</label>
+    <input type="text" name="local" placeholder="Digite aqui o local do empresa" 
+    value="{{empresa.local}}">
+</div>
+
+<input type="Submit" value="Editar">
+
+ </form>

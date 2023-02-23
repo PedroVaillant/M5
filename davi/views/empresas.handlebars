@@ -1,0 +1,10 @@
+<h1> Clientes cadastrados</h1>
+
+<class="prod-container">
+    {{#each listar}}
+
+    <strong>#{{this.CNPJ}} </strong> - 
+    Nome: <a href="/empresa/{{this.CNPJ}}"> {{nome}} </a> - email: {{email}} - Telefone {{telefone}} - local {{local}} <br>
+
+    {{/each}}
+    </div>
