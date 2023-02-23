@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Tempo de geração: 23-Fev-2023 às 18:55
+- Versão do servidor: 10.4.27-MariaDB
+- versão do PHP: 8.2.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="infanciagirassol" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="actionfigure">
+                CREATE TABLE `actionfigure` (
+                  `id` int(40) NOT NULL AUTO_INCREMENT,
+                  `tipo` varchar(100) DEFAULT NULL,
+                  `nome` varchar(200) DEFAULT NULL,
+                  `preco` varchar(50) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="brinquedos">
+                CREATE TABLE `brinquedos` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `nome` varchar(50) DEFAULT NULL,
+                  `marca` varchar(50) DEFAULT NULL,
+                  `material` varchar(20) DEFAULT NULL,
+                  `preco` varchar(30) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="empresa">
+                CREATE TABLE `empresa` (
+                  `CNPJ` varchar(100) NOT NULL,
+                  `nome` varchar(300) DEFAULT NULL,
+                  `email` varchar(200) DEFAULT NULL,
+                  `local` varchar(1000) DEFAULT NULL,
+                  `telefone` varchar(100) DEFAULT NULL,
+                  PRIMARY KEY (`CNPJ`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="funcionario">
+                CREATE TABLE `funcionario` (
+                  `CPF` varchar(80) NOT NULL,
+                  `nome` varchar(100) DEFAULT NULL,
+                  `cargo` varchar(50) DEFAULT NULL,
+                  `idade` varchar(60) DEFAULT NULL,
+                  PRIMARY KEY (`CPF`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="giftcard">
+                CREATE TABLE `giftcard` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `tipo` varchar(100) DEFAULT NULL,
+                  `nome` varchar(100) DEFAULT NULL,
+                  `preco` varchar(30) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="jogodemesa">
+                CREATE TABLE `jogodemesa` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `nome` varchar(50) DEFAULT NULL,
+                  `genero` varchar(50) DEFAULT NULL,
+                  `descricao` varchar(20) DEFAULT NULL,
+                  `preco` varchar(20) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'infanciagirassol'
+    -->
+    <database name="infanciagirassol">
+        <!-- Tabela actionfigure -->
+        <table name="actionfigure">
+            <column name="id">1</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">Sakura</column>
+            <column name="preco">R$ 150</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">5</column>
+            <column name="tipo">pdksaodp</column>
+            <column name="nome">dsadpk</column>
+            <column name="preco">odkpsakdsa</column>
+        </table>
+        <!-- Tabela brinquedos -->
+        <!-- Tabela empresa -->
+        <!-- Tabela funcionario -->
+        <!-- Tabela giftcard -->
+        <table name="giftcard">
+            <column name="id">1</column>
+            <column name="tipo">dopaksdpaskod</column>
+            <column name="nome">doksapdoask</column>
+            <column name="preco">doaskdpaskdoaspd</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">2</column>
+            <column name="tipo">ofodfipasifo</column>
+            <column name="nome">kjsgpdagop</column>
+            <column name="preco">pfoiafopai</column>
+        </table>
+        <!-- Tabela jogodemesa -->
+    </database>
+</pma_xml_export>
