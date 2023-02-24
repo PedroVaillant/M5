@@ -1,0 +1,18 @@
+<head>
+    <title>{{buscarfuncionario.nome}}</title>
+</head>
+
+<body>
+    <h1>Resultado da pesquisa: {{buscarfuncionario.nome}}</h1>
+    <hr>
+    - <strong>{{buscarfuncionario.nome}}</strong>
+   <br>
+    - CPF: {{buscarfuncionario.CPF}}
+    <br>
+    - Cargo: {{buscarfuncionario.cargo}}
+    <br>
+    - Idade {{buscarfuncionario.idade}}
+    <br>
+    <a href="/funcionario/editar/{{buscarfuncionario.CPF}}">Editar dados</a>
+    <a href="/funcionario/excluir/{{buscarfuncionario.CPF}}">Excluir funcionario</a>
+</body>

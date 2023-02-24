@@ -1,0 +1,18 @@
+<head>
+    <title>{{buscarjogodemesa.nome}}</title>
+</head>
+
+<body>
+    <h1>Resultado da pesquisa: {{buscarjogodemesa.nome}}</h1>
+    <hr>
+    - <strong>{{buscarjogodemesa.nome}}</strong>
+   <br>
+    - Modelo: {{buscarjogodemesa.genero}}
+    <br>
+    - Gênero: {{buscarjogodemesa.descricao}}
+    <br>
+    - Preço: {{buscarjogodemesa.preco}}
+    <br>
+    <a href="/jogodemesa/editar/{{buscarjogodemesa.id}}">Edite suas informações</a>
+    <a href="/jogodemesa/excluir/{{buscarjogodemesa.id}}">Excluir produto</a>
+</body>
