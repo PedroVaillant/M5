@@ -23,8 +23,6 @@ app.get("/", (req, res) => {
 
 app.use(express.urlencoded({ extended: true }));
 
-
-
 //---------------------------------------- addfuncionario.handlebars ----------------------------------------------//
 // Página Cadastro
 app.get("/cadastro", (req, res) => {
@@ -33,12 +31,12 @@ app.get("/cadastro", (req, res) => {
 
 // Função de cadastro
 app.post("/funcionario/addfuncionario", (req, res) => {
-  const CPF = req.body.CPF;
+  const cpf = req.body.cpf;
   const nome = req.body.nome;
   const cargo = req.body.cargo;
   const idade = req.body.idade;
 
-  const sql = `INSERT INTO funcionario (CPF, nome, cargo, idade) VALUES ('${CPF}', '${nome}', '${cargo}','${idade}' )`;
+  const sql = `INSERT INTO funcionario (cpf, nome, cargo, idade) VALUES ('${cpf}', '${nome}', '${cargo}','${idade}' )`;
   conn.query(sql, function (err) {
     if (err) {
       console.log(err);
@@ -67,9 +65,9 @@ app.get("/listadefuncionarios", (req, res) => {
 
 // Função de buscar, que leva para o buscarfuncionario.handlebars
 app.post("/resultado/", (req, res) => {
-  const CPF = req.body.CPF;
+  const cpf = req.body.cpf;
 
-  const sql = `SELECT * FROM funcionario WHERE CPF = ${CPF}`;
+  const sql = `SELECT * FROM funcionario WHERE cpf = ${cpf}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -82,12 +80,12 @@ app.post("/resultado/", (req, res) => {
   });
 });
 
-//---------------------------------------- buscarfuncionario.handlebars / brinquedoid.handelebars ------------------------------------------//
-// Página onde consulta as informações do funcionario por CPF
-app.get("/funcionario/:CPF", (req, res) => {
-  const CPF = req.params.CPF;
+//---------------------------------------- buscarfuncionario.handlebars ------------------------------------------//
+// Página onde consulta as informações do funcionario por cpf
+app.get("/funcionario/:cpf", (req, res) => {
+  const cpf = req.params.cpf;
 
-  const sql = `SELECT * FROM brinquedos WHERE CPF = ${CPF}`;
+  const sql = `SELECT * FROM funcionario WHERE cpf = ${cpf}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -102,10 +100,10 @@ app.get("/funcionario/:CPF", (req, res) => {
 });
 
 // Função de excluir
-app.get("/funcionario/excluir/:CPF", (req, res) => {
-  const CPF = req.params.CPF;
+app.get("/funcionario/excluir/:cpf", (req, res) => {
+  const cpf = req.params.cpf;
 
-  const sql = `DELETE FROM funcionario WHERE CPF = '${CPF}'`;
+  const sql = `DELETE FROM funcionario WHERE cpf = '${cpf}'`;
 
   conn.query(sql, function (err) {
     if (err) {
@@ -118,10 +116,10 @@ app.get("/funcionario/excluir/:CPF", (req, res) => {
 
 //---------------------------------------- editfuncionario.handlebars ---------------------------------------//
 // Página de edição das informações do cliente
-app.get("/funcionario/editar/:CPF", (req, res) => {
-  const CPF = req.params.CPF;
+app.get("/funcionario/editar/:cpf", (req, res) => {
+  const cpf = req.params.cpf;
 
-  const sql = `SELECT * FROM funcionario WHERE CPF = ${CPF}`;
+  const sql = `SELECT * FROM funcionario WHERE cpf = ${cpf}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -136,12 +134,12 @@ app.get("/funcionario/editar/:CPF", (req, res) => {
 
 // Função de editar
 app.post("/funcionario/updatefuncionario", (req, res) => {
-  const CPF = req.body.CPF; 
+  const cpf = req.body.cpf; 
   const nome = req.body.nome;
   const cargo = req.body.cargo;
   const idade = req.body.idade;
 
-  const sql = `UPDATE funcionario SET CPF = '${CPF}', nome = '${nome}', cargo = '${cargo}', idade = '${idade}' WHERE CPF = ${CPF}`;
+  const sql = `UPDATE funcionario SET cpf = '${cpf}', nome = '${nome}', cargo = '${cargo}', idade = '${idade}' WHERE cpf = ${cpf}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -153,18 +151,18 @@ app.post("/funcionario/updatefuncionario", (req, res) => {
 });
 
 //---------------------------------------- funcionarioCPF.handlebars ---------------------------------------//
-// Página onde mostra somente a informação daquele CPF
-app.get("/funcionarioCPF/:CPF", (req, res) => {
-  const CPF = req.params.CPF;
+// Página onde mostra somente a informação daquele cpf
+app.get("/funcionarioCPF/:cpf", (req, res) => {
+  const cpf = req.params.cpf;
 
-  const sql = `SELECT * FROM funcionario WHERE CPF = ${CPF}`;
+  const sql = `SELECT * FROM funcionario WHERE cpf = ${cpf}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
       console.log(err);
       return;
     }
-    const listadefuncionarios = data;
+    const listardados = data;
 
     console.log(listardados);
     res.render("funcionarioCPF", { layout: false, listardados });
@@ -179,7 +177,7 @@ const conn = mysql.createConnection({
   port: "3306",
   user: "root",
   password: "",
-  database: "infanciagirrasol",
+  database: "infanciagirassol",
 });
 
 conn.connect(function (err) {

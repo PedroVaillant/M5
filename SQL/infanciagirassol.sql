@@ -100,10 +100,10 @@ CREATE TABLE `funcionario` (
 --
 
 INSERT INTO `funcionario` (`cpf`, `nome`, `cargo`, `idade`) VALUES
-('192.878.315-56', 'Yago Marcelo Leandro Nogueira', 'Gerente', 40),
-('263.159.893-81', 'Valentina Isadora Hadassa Araújo', 'Coordenador', 45),
-('502.610.008-29', 'Esther Isabelle Nunes', 'Assistente', 36),
-('920.154.964-40', 'Sérgio Isaac Vitor Barros', 'Estoquista', 58);
+('19287831556', 'Yago Marcelo Leandro Nogueira', 'Gerente', 40),
+('26315989381', 'Valentina Isadora Hadassa Araújo', 'Coordenador', 45),
+('50261000829', 'Esther Isabelle Nunes', 'Assistente', 36),
+('92015496440', 'Sérgio Isaac Vitor Barros', 'Estoquista', 58);
 
 -- --------------------------------------------------------
 

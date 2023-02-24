@@ -137,25 +137,25 @@
         <!-- Tabela empresa -->
         <!-- Tabela funcionario -->
         <table name="funcionario">
-            <column name="cpf">192.878.315-56</column>
+            <column name="cpf">19287831556</column>
             <column name="nome">Yago Marcelo Leandro Nogueira</column>
             <column name="cargo">Gerente</column>
             <column name="idade">40</column>
         </table>
         <table name="funcionario">
-            <column name="cpf">263.159.893-81</column>
+            <column name="cpf">26315989381</column>
             <column name="nome">Valentina Isadora Hadassa Araújo</column>
             <column name="cargo">Coordenador</column>
             <column name="idade">45</column>
         </table>
         <table name="funcionario">
-            <column name="cpf">502.610.008-29</column>
+            <column name="cpf">50261000829</column>
             <column name="nome">Esther Isabelle Nunes</column>
             <column name="cargo">Assistente</column>
             <column name="idade">36</column>
         </table>
         <table name="funcionario">
-            <column name="cpf">920.154.964-40</column>
+            <column name="cpf">92015496440</column>
             <column name="nome">Sérgio Isaac Vitor Barros</column>
             <column name="cargo">Estoquista</column>
             <column name="idade">58</column>

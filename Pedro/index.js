@@ -23,8 +23,6 @@ app.get("/", (req, res) => {
 
 app.use(express.urlencoded({ extended: true }));
 
-
-
 //---------------------------------------- addbrinquedos.handlebars ----------------------------------------------//
 // Página Cadastro
 app.get("/cadastro", (req, res) => {
@@ -48,8 +46,8 @@ app.post("/brinquedo/addbrinquedo", (req, res) => {
     console.log("Brinquedo cadastrado com sucesso!");
   });
 });
-//---------------------------------------- listaclientes.handlebars -------------------------------------//
-// Página onde mostra a lista de todos os clientes
+//---------------------------------------- listabrinquedos.handlebars -------------------------------------//
+// Página onde mostra a lista de todos os brinquedos
 app.get("/listabrinquedos", (req, res) => {
   const sql = "SELECT * FROM brinquedos";
 

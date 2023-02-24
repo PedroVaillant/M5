@@ -7,13 +7,12 @@
 
 <form action="/resultado/" method="post">
     <div class="form-control">
-        <input type="text" name="CPF" id="CPF">
+        <input type="text" name="cpf" id="cpf">
         
         <input type="submit" value="Buscar">
 </form>
     <br>
     {{#each listar}}
     <br>
-    <strong> #{{this.id}} </strong>
-    - <a href="/funcionarioCPF/{{this.id}}">{{nome}}</a>
+    * <strong><a href="/funcionarioCPF/{{this.cpf}}">{{nome}}</a></strong>
     {{/each}}
