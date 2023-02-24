@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Tempo de geração: 23-Fev-2023 às 18:55
+- Tempo de geração: 24-Fev-2023 às 01:33
 - Versão do servidor: 10.4.27-MariaDB
 - versão do PHP: 8.2.0
 -->
@@ -15,7 +15,7 @@
     - Structure schemas
     -->
     <pma:structure_schemas>
-        <pma:database name="infanciagirassol" collation="utf8mb4_general_ci" charset="utf8mb4">
+        <pma:database name="infanciagirassol" collation="utf8_general_ci" charset="utf8">
             <pma:table name="actionfigure">
                 CREATE TABLE `actionfigure` (
                   `id` int(40) NOT NULL AUTO_INCREMENT,
@@ -33,45 +33,45 @@
                   `material` varchar(20) DEFAULT NULL,
                   `preco` varchar(30) DEFAULT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="empresa">
                 CREATE TABLE `empresa` (
-                  `CNPJ` varchar(100) NOT NULL,
-                  `nome` varchar(300) DEFAULT NULL,
-                  `email` varchar(200) DEFAULT NULL,
-                  `local` varchar(1000) DEFAULT NULL,
-                  `telefone` varchar(100) DEFAULT NULL,
-                  PRIMARY KEY (`CNPJ`)
+                  `cnpj` varchar(20) NOT NULL,
+                  `nome` varchar(50) DEFAULT NULL,
+                  `email` varchar(50) DEFAULT NULL,
+                  `local` varchar(60) DEFAULT NULL,
+                  `telefone` varchar(15) DEFAULT NULL,
+                  PRIMARY KEY (`cnpj`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="funcionario">
                 CREATE TABLE `funcionario` (
-                  `CPF` varchar(80) NOT NULL,
-                  `nome` varchar(100) DEFAULT NULL,
+                  `cpf` varchar(15) NOT NULL,
+                  `nome` varchar(50) DEFAULT NULL,
                   `cargo` varchar(50) DEFAULT NULL,
-                  `idade` varchar(60) DEFAULT NULL,
-                  PRIMARY KEY (`CPF`)
+                  `idade` int(11) DEFAULT NULL,
+                  PRIMARY KEY (`cpf`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="giftcard">
                 CREATE TABLE `giftcard` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
-                  `tipo` varchar(100) DEFAULT NULL,
-                  `nome` varchar(100) DEFAULT NULL,
+                  `tipo` varchar(50) DEFAULT NULL,
+                  `nome` varchar(50) DEFAULT NULL,
                   `preco` varchar(30) DEFAULT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="jogodemesa">
                 CREATE TABLE `jogodemesa` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `nome` varchar(50) DEFAULT NULL,
                   `genero` varchar(50) DEFAULT NULL,
-                  `descricao` varchar(20) DEFAULT NULL,
+                  `descricao` varchar(500) DEFAULT NULL,
                   `preco` varchar(20) DEFAULT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -84,31 +84,135 @@
         <table name="actionfigure">
             <column name="id">1</column>
             <column name="tipo">Action Figure</column>
-            <column name="nome">Sakura</column>
-            <column name="preco">R$ 150</column>
+            <column name="nome">Vingadores - Homem de Ferro</column>
+            <column name="preco">R$96,72</column>
         </table>
         <table name="actionfigure">
-            <column name="id">5</column>
-            <column name="tipo">pdksaodp</column>
-            <column name="nome">dsadpk</column>
-            <column name="preco">odkpsakdsa</column>
+            <column name="id">2</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">Vingadores - Capitão América</column>
+            <column name="preco">R$83,99</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">3</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">Vingadores - Hulk</column>
+            <column name="preco">R$128,99</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">4</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">Vingadores - Thor</column>
+            <column name="preco">R$96,90</column>
         </table>
         <!-- Tabela brinquedos -->
+        <table name="brinquedos">
+            <column name="id">1</column>
+            <column name="nome">LEGO Classic - Caixa Média de Peças Criativas</column>
+            <column name="marca">LEGO</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$233,99</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">2</column>
+            <column name="nome">Pula Pirata</column>
+            <column name="marca">Estrela</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$74,99</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">3</column>
+            <column name="nome">Crocodilo Dentista</column>
+            <column name="marca">POLIBRINQ</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$47,30</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">4</column>
+            <column name="nome">Pinguim Numa Fria</column>
+            <column name="marca">Art Brink</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$29,49</column>
+        </table>
         <!-- Tabela empresa -->
         <!-- Tabela funcionario -->
+        <table name="funcionario">
+            <column name="cpf">192.878.315-56</column>
+            <column name="nome">Yago Marcelo Leandro Nogueira</column>
+            <column name="cargo">Gerente</column>
+            <column name="idade">40</column>
+        </table>
+        <table name="funcionario">
+            <column name="cpf">263.159.893-81</column>
+            <column name="nome">Valentina Isadora Hadassa Araújo</column>
+            <column name="cargo">Coordenador</column>
+            <column name="idade">45</column>
+        </table>
+        <table name="funcionario">
+            <column name="cpf">502.610.008-29</column>
+            <column name="nome">Esther Isabelle Nunes</column>
+            <column name="cargo">Assistente</column>
+            <column name="idade">36</column>
+        </table>
+        <table name="funcionario">
+            <column name="cpf">920.154.964-40</column>
+            <column name="nome">Sérgio Isaac Vitor Barros</column>
+            <column name="cargo">Estoquista</column>
+            <column name="idade">58</column>
+        </table>
         <!-- Tabela giftcard -->
         <table name="giftcard">
             <column name="id">1</column>
-            <column name="tipo">dopaksdpaskod</column>
-            <column name="nome">doksapdoask</column>
-            <column name="preco">doaskdpaskdoaspd</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Digital Roblox R$25</column>
+            <column name="preco">R$25</column>
         </table>
         <table name="giftcard">
             <column name="id">2</column>
-            <column name="tipo">ofodfipasifo</column>
-            <column name="nome">kjsgpdagop</column>
-            <column name="preco">pfoiafopai</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Digital Roblox R$40</column>
+            <column name="preco">R$40</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">3</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Digital Roblox R$60</column>
+            <column name="preco">R$60</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">4</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Digital Roblox R$100</column>
+            <column name="preco">R$100</column>
         </table>
         <!-- Tabela jogodemesa -->
+        <table name="jogodemesa">
+            <column name="id">1</column>
+            <column name="nome">Super Banco Imobiliário</column>
+            <column name="genero">NULL</column>
+            <column name="descricao">O tradicional jogo Banco Imobiliário, com a máquina de crédito e débito para fazer as transações bancárias. Inclui 1 tabuleiro, 28 títulos de posse, 6 cartões, 80 casas, 2 dados, 6 marcadores de metal, 1 máquina de cartão (pilhas não inclusas), 32 cartões noticia e 1 manual de instruções.</column>
+            <column name="preco">R$169,90</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">2</column>
+            <column name="nome">Jogo da Vida</column>
+            <column name="genero">NULL</column>
+            <column name="descricao">Trilhe o seu caminho em busca do sucesso. Desenvolva a sua carreira, ganhe dinheiro, case e tenha filhos. O jogo da vida é a simulação da vida real com muita diversão.</column>
+            <column name="preco">R$119,90</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">3</column>
+            <column name="nome">War</column>
+            <column name="genero">NULL</column>
+            <column name="descricao">Desafie seus amigos e descubra por que War é o jogo de estratégia mais jogado do Brasil!</column>
+            <column name="preco">R$104,40</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">4</column>
+            <column name="nome">Detetive</column>
+            <column name="genero">NULL</column>
+            <column name="descricao">O milionário Carlos Fortuna foi vítima de assassinato! Percorra a cidade e colete as provas que apontem (ou inocentem) o assassino, a cena e a arma do crime.</column>
+            <column name="preco">R$99,90</column>
+        </table>
     </database>
 </pma_xml_export>
