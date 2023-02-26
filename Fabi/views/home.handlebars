@@ -1,0 +1,22 @@
+<h1>Cadastro de Gift Card</h1>
+<hr>
+<form action="/giftcard/insertgiftcard" method="post">
+        <div class="form-control">
+            <label for="Nome" class="form-label">Nome</label>
+            <input type="text" name="nome" class="form-control" id="Nome">
+          </div>
+        <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo </label>
+          <input type="text"  name="tipo" class="form-control" id="tipo" aria-describedby="tipoHelp">          
+        </div>
+        <div class="mb-3">
+            <label for="preco" class="form-label">Valor</label>
+            <input type="text" name="preco" class="form-control" id="preco">
+          </div>
+        <button type="submit" class="btn btn-primary" >Cadastrar</button>
+      </form>
+
+      <a href="/giftcards/"> giftcards cadastrados</a>
+
+      <a href="/busca">Buscar giftcard cadastrada</a>
+</div>

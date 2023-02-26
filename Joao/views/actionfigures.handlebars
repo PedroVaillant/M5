@@ -1,0 +1,10 @@
+<h1> Action Figure </h1>
+
+<class="prod-container">
+    {{#each listar}}
+
+    <strong>#{{this.id}} </strong> - 
+    Nome: <a href="/actionfigure/{{this.id}}"> {{nome}} </a> - Tipo: {{tipo}} - Valor {{preco}} <br>
+
+    {{/each}}
+    </div>
