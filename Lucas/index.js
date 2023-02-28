@@ -174,7 +174,7 @@ app.get("/funcionarioCPF/:cpf", (req, res) => {
 // Conexão com DB no mysql
 const conn = mysql.createConnection({
   host: "127.0.0.1",
-  port: "3306",
+  port: "3307",
   user: "root",
   password: "",
   database: "infanciagirassol",
@@ -190,5 +190,5 @@ conn.connect(function (err) {
 
 // Servidor
 app.listen(port, () => {
-  console.log(`App rodando ma porta ${port}`);
+  console.log(`App rodando na porta ${port}`);
 });
