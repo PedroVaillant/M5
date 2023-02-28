@@ -8,8 +8,9 @@ Back-end do projeto - Trabalho Módulo 5
 </h1>
 <p>Resumo: Esse projeto tem como objetivo criar um site com back-end e front-end. A primeira etapa é essa do back-end.</p>
 <h1>Contextualização</h1>
-<p>Objetivo: Criar o back-end de uma instituição, loja, comércio, campanha da sua escolha. Será necessário ter os seguintes requísitos. Nesse caso, nosso projeto é de uma loja de artigos infantis, foi criado o back-end e na próxima parte será adicionada o front-end.</p>
+<p>Objetivo: Criar o back-end de uma instituição, loja, comércio, campanha da sua escolha. Nesse caso, nosso projeto é de uma loja de artigos infantis, foi criado o back-end e na próxima parte será adicionada o front-end.</p>
 <hr>
+<p>Esses são os requísitos do trabalho, logo as ferramentas, técnicas que usamos para trabalhar</p>
 <ul>
 <li>CRUD</li>
 <li>Banco de dados</li>
