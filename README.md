@@ -35,10 +35,15 @@ Back-end do projeto - Trabalho Módulo 5
 <h1>Esquema de funcionamento(fluxograma)</h1>
 <img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
 
-
+<hr>
 <h1>Screenshot do funcionamento</h1>
-<img src="/img/funcionamento.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/1.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/2.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/3.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/4.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/5.jpg" alt="funcionamento" width="936" height="392">
 
+<hr>
 <h2>Ferramentas utilizadas no projeto</h2>
    ❎ VSCode
    ❎ NodeJS
