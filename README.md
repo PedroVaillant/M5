@@ -1,5 +1,5 @@
 # M5 - Site de Loja de Brinquedos(Parte 1)
-<img src="/img/footer.png" alt="footer" width="876" height="484">
+<img src="/img/footer.png" alt="footer" width="552" height="300">
 
 <h1 align="center">
 
@@ -48,7 +48,7 @@ Back-end do projeto - Trabalho Módulo 5
    ❎ XAMPP
 <br>
 
-<img src="/img/footer.png" alt="footer" width="876" height="484">
+<img src="/img/footer.png" alt="footer" width="552" height="300">
 
 
 
