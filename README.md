@@ -37,7 +37,7 @@ Back-end do projeto - Trabalho Módulo 5
 
 <hr>
 <h1>Screenshot do funcionamento</h1>
-<img src="/img/1.jpg" alt="funcionamento" width="936" height="392">
+<img src="/img/1.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/2.jpg" alt="funcionamento" width="936" height="392">
 <img src="/img/3.jpg" alt="funcionamento" width="936" height="392">
 <img src="/img/4.jpg" alt="funcionamento" width="936" height="392">
