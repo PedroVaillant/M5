@@ -1,6 +1,6 @@
 # M5 - Site de Loja de Brinquedos(Parte 1)
 <div align="center" style="display: inline_block">
-<img src="/img/footer.png" alt="footer" width="552" height="300">
+<img src="/img/footer.png" alt="footer" width="900" height="300">
 
 <h1>Back-end do projeto - Trabalho Módulo 5</h1>
 
