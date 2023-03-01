@@ -2,11 +2,13 @@
 <div align="center" style="display: inline_block">
 <img src="/img/footer.png" alt="footer" width="700" height="300">
 
-<h1>Back-end do projeto - Trabalho Módulo 5</h1>
+# Back-end do projeto - Trabalho Módulo 5
 
 </div>
+
 <p>Resumo: Esse projeto tem como objetivo criar um site com back-end e front-end. A primeira etapa é essa do back-end.</p>
-<h1>Contextualização</h1>
+
+# Contextualização
 <p>Objetivo: Criar o back-end de uma instituição, loja, comércio, campanha da sua escolha. Nesse caso, nosso projeto é de uma loja de artigos infantis, foi criado o back-end e na próxima parte será adicionada o front-end.</p>
 <hr>
 <p>Esses são os requísitos do trabalho, logo as ferramentas, técnicas que usamos para trabalhar</p>
@@ -17,7 +19,7 @@
 <li>Usar Express, handlebars(view)</li>
 <hr>
 
-<h1>Funcionamento</h1>
+# Funcionamento
 <p>O back-end rodará a partir do momento que as pendências forem instaladas</p>
 <ul>
 <li>1. Instale o node.
@@ -31,26 +33,28 @@
 </ul>
 </p>
 
-<h1>Esquema de funcionamento(fluxograma)</h1>
+# Esquema de funcionamento(fluxograma)
 <img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
-
 <hr>
-<h1>Screenshot do funcionamento</h1>
+
+# Screenshot do funcionamento
+<div align="center" style="display: inline_block">
 <img src="/img/1.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/2.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/3.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/4.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/5.jpg" alt="funcionamento" width="700" height="392">
+</div>
 
-<hr>
-<h2>Ferramentas utilizadas no projeto</h2>
+---
+
+## Ferramentas utilizadas no projeto
    ❎ VSCode
    ❎ NodeJS
    ❎ Github
    ❎ Express
    ❎ SQL
    ❎ XAMPP
-<br>
 
 <img src="/img/footer.png" alt="footer" width="552" height="300">
 
