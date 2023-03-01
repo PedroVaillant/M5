@@ -108,7 +108,7 @@
         <!-- Tabela brinquedos -->
         <table name="brinquedos">
             <column name="id">1</column>
-            <column name="nome">LEGO Classic - Caixa Média de Peças Criativas</column>
+            <column name="nome">LEGO Classic</column>
             <column name="marca">LEGO</column>
             <column name="material">Plástico</column>
             <column name="preco">R$233,99</column>

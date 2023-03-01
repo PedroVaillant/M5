@@ -63,7 +63,7 @@ CREATE TABLE `brinquedos` (
 --
 
 INSERT INTO `brinquedos` (`id`, `nome`, `marca`, `material`, `preco`) VALUES
-(1, 'LEGO Classic - Caixa Média de Peças Criativas', 'LEGO', 'Plástico', 'R$233,99'),
+(1, 'LEGO Classic', 'LEGO', 'Plástico', 'R$233,99'),
 (2, 'Pula Pirata', 'Estrela', 'Plástico', 'R$74,99'),
 (3, 'Crocodilo Dentista', 'POLIBRINQ', 'Plástico', 'R$47,30'),
 (4, 'Pinguim Numa Fria', 'Art Brink', 'Plástico', 'R$29,49');
