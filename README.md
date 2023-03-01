@@ -8,7 +8,10 @@
 
 <p>Resumo: Esse projeto tem como objetivo criar um site com back-end e front-end. A primeira etapa é essa do back-end.</p>
 
+<div align="center" style="display: inline_block">
+
 # Contextualização
+</div>
 <p>Objetivo: Criar o back-end de uma instituição, loja, comércio, campanha da sua escolha. Nesse caso, nosso projeto é de uma loja de artigos infantis, foi criado o back-end e na próxima parte será adicionada o front-end.</p>
 <hr>
 <p>Esses são os requísitos do trabalho, logo as ferramentas, técnicas que usamos para trabalhar</p>
@@ -20,7 +23,10 @@
 
 ---
 
+<div align="center" style="display: inline_block">
+
 # Funcionamento
+</div>
 <p>O back-end rodará a partir do momento que as pendências forem instaladas</p>
 <ul>
 <li>1. Instale o node.
@@ -36,7 +42,7 @@
 
 <div align="center" style="display: inline_block">
 
-# Esquema de funcionamento(fluxograma)
+# Esquema de funcionamento (Fluxograma)
 <img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
 
 ---
