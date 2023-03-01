@@ -1,6 +1,6 @@
 # M5 - Site de Loja de Brinquedos(Parte 1)
 <div align="center" style="display: inline_block">
-<img src="/img/footer.png" alt="footer" width="700" height="300">
+<img src="/img/footer.png" alt="footer" width="550" height="300">
 
 # Back-end do projeto - Trabalho Módulo 5
 
@@ -17,7 +17,8 @@
 <li>Banco de dados</li>
 <li>Código Comentado</li>
 <li>Usar Express, handlebars(view)</li>
-<hr>
+
+---
 
 # Funcionamento
 <p>O back-end rodará a partir do momento que as pendências forem instaladas</p>
@@ -35,7 +36,8 @@
 
 # Esquema de funcionamento(fluxograma)
 <img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
-<hr>
+
+---
 
 # Screenshot do funcionamento
 <div align="center" style="display: inline_block">
@@ -44,7 +46,7 @@
 <img src="/img/3.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/4.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/5.jpg" alt="funcionamento" width="700" height="392">
-</div>
+
 
 ---
 
@@ -56,7 +58,5 @@
    ❎ SQL
    ❎ XAMPP
 
-<img src="/img/footer.png" alt="footer" width="552" height="300">
-
-
-
+<img src="/img/footer.png" alt="footer" width="550" height="300">
+</div>
