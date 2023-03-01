@@ -34,13 +34,14 @@
 </ul>
 </p>
 
+<div align="center" style="display: inline_block">
+
 # Esquema de funcionamento(fluxograma)
 <img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
 
 ---
 
 # Screenshot do funcionamento
-<div align="center" style="display: inline_block">
 <img src="/img/1.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/2.jpg" alt="funcionamento" width="700" height="392">
 <img src="/img/3.jpg" alt="funcionamento" width="700" height="392">
