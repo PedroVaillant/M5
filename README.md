@@ -1,11 +1,10 @@
 # M5 - Site de Loja de Brinquedos(Parte 1)
+<div align="center" style="display: inline_block">
 <img src="/img/footer.png" alt="footer" width="552" height="300">
 
-<h1 align="center">
+<h1>Back-end do projeto - Trabalho Módulo 5</h1>
 
-Back-end do projeto - Trabalho Módulo 5
-
-</h1>
+</div>
 <p>Resumo: Esse projeto tem como objetivo criar um site com back-end e front-end. A primeira etapa é essa do back-end.</p>
 <h1>Contextualização</h1>
 <p>Objetivo: Criar o back-end de uma instituição, loja, comércio, campanha da sua escolha. Nesse caso, nosso projeto é de uma loja de artigos infantis, foi criado o back-end e na próxima parte será adicionada o front-end.</p>
