@@ -1,0 +1,10 @@
+<h1> Gift Card </h1>
+
+<class="prod-container">
+    {{#each listar}}
+
+    <strong>#{{this.id}} </strong> - 
+    Nome: <a href="/giftcard/{{this.id}}"> {{nome}} </a> - tipo: {{tipo}} - preco {{preco}} <br>
+
+    {{/each}}
+    </div>
