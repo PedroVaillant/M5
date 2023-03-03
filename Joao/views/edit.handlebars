@@ -1,0 +1,26 @@
+<h1> Editar informações Da Action Figure</h1>
+<hr>
+
+<form action="/alterar/updateactionfigure" method="POST"> 
+<div class="form control">
+    <input type="hidden" name="id" id="id" value="{{actionfigure.id}}">
+    <label for="tipo">Tipo</label>
+    <input type="text" name="tipo" placeholder="Digite aqui o tipo"
+     value="{{actionfigure.tipo}}">
+</div>
+
+<div class="form control">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" placeholder="Digite aqui o nome do actionfigure"
+     value="{{actionfigure.nome}}">
+</div>
+
+<div class="form control">
+    <label for="preco">Valor</label>
+    <input type="text" name="preco" placeholder="Digite aqui o preco do actionfigure" 
+    value="{{actionfigure.preco}}">
+</div>
+
+<input type="Submit" value="Editar">
+
+ </form>
