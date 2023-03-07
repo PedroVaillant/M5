@@ -34,7 +34,12 @@
 <li>2. Instale o xampp.
 </li>
 <li>3. Baixe o projeto</li>
-<li>3. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando o código: npm i</li>
+<li>3. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando o código: </li>
+```
+npm i express
+npm i mysql
+npm i handlebars
+```
 <li>4. Importe um dos arquivos da pasta SQL para o xampp, através do painel de administrador do xampp</li>
 <li>5. No Visual Studio Code coloque o comando npm start no terminal</li>
 </ul>
