@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionario</title>
+</head>
+
+<body>
+    <h1>Cadastrar um novo funcionario</h1>
+    <hr>
+    <form action="funcionario/addfuncionario" method="POST">
+        <div>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" placeholder="Digite o CPF">
+        </div>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite o nome">
+        </div>
+        <div>
+            <label for="cargo">Cargo: </label>
+            <input type="text" name="cargo" placeholder="Digite o cargo">
+        </div>
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="text" name="idade" placeholder="Digite a idade">
+        </div>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <a href="/">VOLTAR</a>
+</body>

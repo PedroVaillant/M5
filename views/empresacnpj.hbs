@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{listarEmpresa.nome}}</title>
+</head>
+
+<body>
+  <form>
+    <h1>Registro Da Empresa</h1>
+    <div>
+      <h2>{{listarEmpresa.nome}}</h2>
+      <label>CNPJ: {{listarEmpresa.cnpj}}</label>
+    </div>
+    <div>
+      <label>Email: {{listarEmpresa.email}}</label>
+    </div>
+    <div>
+      <label>Telefone: {{listarEmpresa.telefone}}</label>
+    </div>
+    <div>
+      <label>Endereço: {{listarEmpresa.local}}</label>
+    </div>
+  </form>
+  <a href="/empresa/edit/{{listarEmpresa.cnpj}}"> EDITAR</a>
+  <a href="/empresa/remove/{{listarEmpresa.cnpj}}"> EXCLUIR</a>
+  <a href="/listaempresas">VOLTAR</a>
+</body>

@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Brinquedos</title>
+</head>
+
+<body>
+       <form action="/resultado/brinquedo/" method="post">
+        <div >
+            <input type="text" name="busca" id="busca">
+            <input type="submit" value="Buscar">
+        </div>
+    </form>
+    <hr>
+    <a href="/">VOLTAR</a>
+    <h1> Brinquedos </h1>
+    {{#each listar}}
+    <strong>#{{this.id}} </strong> -
+    Nome: <a href="/brinquedoid/{{this.id}}"> {{nome}} </a>
+    <br>
+    {{/each}}
+
+</body>

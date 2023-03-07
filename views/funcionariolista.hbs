@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de funcionários</title>
+</head>
+
+<body>
+    <h1>Lista de funcionários</h1>
+    <hr>
+    <form action="/resultado/funcionario/" method="post">
+        <div>
+            <input type="search" name="cpf" id="cpf" placeholder="Digite o CPF">
+            <input type="submit" value="Buscar">
+        </div>
+    </form>
+    <hr>
+  <a href="/">VOLTAR</a>
+    {{#each listar}}
+    <br>
+    {{cpf}} - <strong><a href="/funcionarioCPF/{{this.cpf}}">{{nome}}</a></strong>
+    {{/each}}
+</body>

@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Empresas</title>
+</head>
+
+<body>
+    <form action="/buscar/empresa/" method="post">
+        <div>
+            <input type="text" name="busca" id="busca">
+            <input type="submit" value="Buscar">
+        </div>
+    </form>
+    <hr>
+    <a href="/">VOLTAR</a>
+    <h1> Clientes cadastrados</h1>
+
+    <class="prod-container">
+        {{#each listar}}
+        <strong>#{{this.cnpj}} </strong> -
+        Nome: <a href="/empresa/{{this.cnpj}}"> {{nome}} </a>
+        <br>
+        {{/each}}
+        </div>
+</body>

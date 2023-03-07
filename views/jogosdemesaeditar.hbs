@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar{{editjogodemesa.nome}}</title>
+</head>
+
+<body>
+    <h1>Editar informações de "{{editjogodemesa.nome}}"</h1>
+    <hr>
+    <form action="/jogodemesa/updatejogodemesa" method="post">
+        <div>
+            <input type="hidden" name="id" id="id" value="{{editjogodemesa.id}}">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do jogodemesa" value="{{editjogodemesa.nome}}">
+        </div>
+        <div>
+            <label for="genero">Gênero:</label>
+            <input type="text" name="genero" placeholder="Qual o genero do jogodemesa?"
+                value="{{editjogodemesa.genero}}">
+        </div>
+        <div>
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" placeholder="Qual a descrição?" value="{{editjogodemesa.descricao}}">
+        </div>
+        <div>
+            <label for="preco">Preço:</label>
+            <input type="text" name="preco" placeholder="Qual e o valor do jogodemesa?"
+                value="{{editjogodemesa.preco}}">
+        </div>
+        <br>
+        <input type="submit" value="Editar">
+    </form>
+<a href="/jogodemesaid/{{editjogodemesa.id}}">VOLTAR</a>
+</body>

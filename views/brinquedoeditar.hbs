@@ -1,0 +1,34 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar {{editbrinquedo.nome}}</title>
+</head>
+
+<body>
+    <h1>Editar informações de "{{editbrinquedo.nome}}"</h1>
+    <hr>
+    <form action="/brinquedo/updatebrinquedo" method="post">
+        <div>
+            <input type="hidden" name="id" value="{{editbrinquedo.id}}">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do brinquedo" value="{{editbrinquedo.nome}}">
+        </div>
+        <div>
+            <label for="Marca">Marca:</label>
+            <input type="text" name="marca" placeholder="Qual e a marca do brinquedo?" value="{{editbrinquedo.marca}}">
+        </div>
+        <div>
+            <label for="material">Tipo de material:</label>
+            <input type="text" name="material" placeholder="Qual e o tipo de material?"
+                value="{{editbrinquedo.material}}">
+        </div>
+        <div>
+            <label for="preco">Preço:</label>
+            <input type="text" name="preco" placeholder="Qual e o valor do brinquedo?" value="{{editbrinquedo.preco}}">
+        </div>
+        <br>
+        <input type="submit" value="Editar">
+    </form>
+    <a href="/brinquedoID/{{editbrinquedo.id}}">VOLTAR</a>
+</body>

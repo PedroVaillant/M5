@@ -43,16 +43,16 @@
 <div align="center" style="display: inline_block">
 
 # Esquema de funcionamento (Fluxograma)
-<img src="/img/loja_infantil.jpg" alt="fluxograma" width="950" height="487">
+<img src="https://user-images.githubusercontent.com/113939119/223291917-19c72da8-5724-4ac4-8398-8b86763aed37.jpg" alt="fluxograma" width="950" height="487">
 
 ---
 
 # Screenshot do funcionamento
-<img src="/img/1.jpg" alt="funcionamento" width="700" height="392">
-<img src="/img/2.jpg" alt="funcionamento" width="700" height="392">
-<img src="/img/3.jpg" alt="funcionamento" width="700" height="392">
-<img src="/img/4.jpg" alt="funcionamento" width="700" height="392">
-<img src="/img/5.jpg" alt="funcionamento" width="700" height="392">
+<img src="https://user-images.githubusercontent.com/113939119/223291865-d61a46d6-2837-445b-a02d-ab8b46df435a.jpg" alt="funcionamento" width="700" height="392">
+<img src="https://user-images.githubusercontent.com/113939119/223291919-4c49c5d9-940c-493e-aaae-1abf6422b902.jpg" alt="funcionamento" width="700" height="392">
+<img src="https://user-images.githubusercontent.com/113939119/223291908-6d02d8bc-e316-41c5-a034-e8b989286e37.jpg" alt="funcionamento" width="700" height="392">
+<img src="https://user-images.githubusercontent.com/113939119/223291910-9644c921-83bd-40c9-a170-c701cdc39f92.jpg" alt="funcionamento" width="700" height="392">
+<img src="https://user-images.githubusercontent.com/113939119/223291911-c0cdae56-0592-4a82-9e11-47ff9abfae52.jpg" alt="funcionamento" width="700" height="392">
 
 
 ---
@@ -65,5 +65,5 @@
    ❎ SQL
    ❎ XAMPP
 
-<img src="/img/footer.png" alt="footer" width="550" height="300">
+<img src="https://user-images.githubusercontent.com/113939119/223291912-cd6a29b9-3e9c-4a3f-afe8-0ebe2ba7468d.png" alt="footer" width="550" height="300">
 </div>

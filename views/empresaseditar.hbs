@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar {{empresa.nome}}</title>
+
+</head>
+
+<body>
+  <h1> Editar {{empresa.nome}}</h1>
+  <hr>
+  <form action="/alterar/updateEmpresa" method="POST">
+
+    <div>
+      <input type="hidden" name="cnpj" id="cnpj" value="{{empresa.cnpj}}">
+      <label for="nome">nome</label>
+      <input type="text" name="nome" placeholder="Digite aqui o nome do empresa" value="{{empresa.nome}}">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input type="text" name="email" placeholder="Digite aqui o email do empresa" value="{{empresa.email}}">
+    </div>
+    <div>
+      <label for="telefone">telefone</label>
+      <input type="text" name="telefone" placeholder="Digite aqui o telefone do empresa" value="{{empresa.telefone}}">
+    </div>
+    <div>
+      <label for="local">Endereço</label>
+      <input type="text" name="local" placeholder="Digite aqui o local do empresa" value="{{empresa.local}}">
+    </div>
+    <input type="Submit" value="Editar">
+
+  </form>
+ <a href="/empresa/{{empresa.cnpj}}">VOLTAR</a>
+</body>

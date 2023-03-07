@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Jogos de mesa</title>
+</head>
+
+<body>
+        
+        <form action="/resultado/jogosdemesa/" method="post">
+            <div>
+                <input type="text" name="id" id="id">
+                <input type="submit" value="Buscar">
+            </div>
+        </form>
+        <hr>
+        <a href="/">VOLTAR</a>
+        <h1>Jogos de mesa</h1>
+        {{#each listar}}
+        <br>
+        <strong> #{{this.id}} </strong>
+        - <a href="/jogodemesaid/{{this.id}}">{{nome}}</a>
+        {{/each}}
+
+</body>

@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar {{actionfigure.nome}}</title>
+</head>
+
+<body>
+    <h1> Editar informações Da Action Figure</h1>
+    <hr>
+    <form action="/alterar/updateactionfigure" method="POST">
+        <div>
+            <input type="hidden" name="id" id="id" value="{{actionfigure.id}}">
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" placeholder="Digite aqui o tipo" value="{{actionfigure.tipo}}">
+        </div>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Digite aqui o nome do actionfigure"
+                value="{{actionfigure.nome}}">
+        </div>
+        <div>
+            <label for="preco">Valor</label>
+            <input type="text" name="preco" placeholder="Digite aqui o preco do actionfigure"
+                value="{{actionfigure.preco}}">
+        </div>
+        <input type="Submit" value="Editar">
+    </form>
+    <a href="/actionfigure/{{actionfigure.id}}">VOLTAR</a>
+
+</body>

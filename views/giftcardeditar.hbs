@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar {{giftcard.nome}}</title>
+</head>
+
+<body>
+        <h1> Editar giftcard</h1>
+        <hr>
+        <form action="/alterar/updategiftcard" method="POST">
+            <div>
+                <input type="hidden" name="id" id="id" value="{{giftcard.id}}">
+                <label for="tipo">Tipo</label>
+                <input type="text" name="tipo" placeholder="Digite aqui o tipo" value="{{giftcard.tipo}}">
+            </div>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite aqui o nome do giftcard" value="{{giftcard.nome}}">
+            </div>
+            <div>
+                <label for="preco">Valor</label>
+                <input type="text" name="preco" placeholder="Digite aqui o preco do giftcard"
+                    value="{{giftcard.preco}}">
+            </div>
+            <input type="Submit" value="Editar">
+        </form>
+        <a href="/giftcard/{{giftcard.id}}">VOLTAR</a>
+</body>

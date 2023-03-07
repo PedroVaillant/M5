@@ -1,0 +1,22 @@
+{{#each listardados}}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário "{{nome}}"</title>
+</head>
+
+<body>
+        <h2>{{nome}}</h2>
+        - CPF: {{cpf}}
+        <br>
+        - Cargo: {{cargo}}
+        <br>
+        - Idade: {{idade}}
+        <br>
+        <a href="/funcionario/editar/{{cpf}}">EDITAR</a>
+        <a href="/funcionario/excluir/{{cpf}}">EXCLUIR</a>
+        <a href="/listadefuncionarios">VOLTAR</a>
+    </main>
+{{/each}}
+</body>
