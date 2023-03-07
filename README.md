@@ -39,8 +39,7 @@
 ```
 npm i express
 npm i mysql
-npm i handlebars
-   
+npm i handlebar
 ```
    
 <li>4. Importe um dos arquivos da pasta SQL para o xampp, através do painel de administrador do xampp</li>
