@@ -18,7 +18,6 @@ app.use(express.static("public"));
 // Página Home
 app.get("/", (req, res) => {
   res.render("home", { layout: false });
-  app.use(express.static(__dirname + "/public"));
 });
 
 app.use(express.urlencoded({ extended: true }));
