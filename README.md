@@ -18,7 +18,6 @@
 <ul>
 <li>CRUD</li>
 <li>Banco de dados</li>
-<li>Código Comentado</li>
 <li>Usar Express, handlebars(view)</li>
 
 ---
